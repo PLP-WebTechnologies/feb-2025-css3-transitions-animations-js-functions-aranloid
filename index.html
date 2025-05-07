@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Animations</h1>
+    <p id="message">Welcome to Loid's interactive webpage! Explore the features below:</p>
+
+    <!-- Button with animation -->
+    <section>
+        <h2>Interactive Button</h2>
+        <button id="animatedButton">Click Me!</button>
+    </section>
+
+    <!-- Input to store user preferences -->
+    <section>
+        <h2>Save Your Preferences</h2>
+        <div>
+            <label for="userPreference">Enter your preference:</label>
+            <input type="text" id="userPreference" placeholder="Type something...">
+            <button id="savePreference">Save Preference</button>
+        </div>
+        <p id="storedPreference"></p>
+    </section>
+
+    <!-- Image Gallery -->
+    <section>
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="img.jpg" alt="Image 1" width="200" height="200">
+            <img src="image1.jpg" alt="Image 2" width="200" height="200">
+            <img src="image2.jpg" alt="Image 3" width="200" height="200">
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <section>
+        <h2>Tabbed Content</h2>
+        <div class="tabs">
+            <button class="tab" data-content="tab1">Tab 1</button>
+            <button class="tab" data-content="tab2">Tab 2</button>
+            <button class="tab" data-content="tab3">Tab 3</button>
+        </div>
+        <div id="tabContent">
+            <p id="tab1" class="tab-pane">Content for Tab 1</p>
+            <p id="tab2" class="tab-pane hidden">Content for Tab 2</p>
+            <p id="tab3" class="tab-pane hidden">Content for Tab 3</p>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section>
+        <h2>Contact Form</h2>
+        <form id="form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <span id="emailFeedback"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="8" required>
+            <span id="passwordFeedback"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Table -->
+    <section>
+        <h2>Simple Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Loid</td>
+                    <td>30</td>
+                    <td>Spy</td>
+                </tr>
+                <tr>
+                    <td>Yor</td>
+                    <td>27</td>
+                    <td>Assassin</td>
+                </tr>
+                <tr>
+                    <td>Anya</td>
+                    <td>6</td>
+                    <td>Telepath</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Unordered List -->
+    <section>
+        <h2>Things to Learn</h2>
+        <ul>
+            <li>HTML Basics</li>
+            <li>CSS Styling</li>
+            <li>JavaScript Interactivity</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <!-- Ordered List -->
+    <section>
+        <h2>Steps to Build a Website</h2>
+        <ol>
+            <li>Plan the layout</li>
+            <li>Write the HTML structure</li>
+            <li>Style with CSS</li>
+            <li>Add interactivity with JavaScript</li>
+        </ol>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
